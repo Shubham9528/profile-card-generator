@@ -50,6 +50,14 @@ const ProfileCard = ({ user, onReset }) => {
     }
   };
 
+
+  function handleReset() {
+    setName(`${user.name.first} ${user.name.last}`);
+    setDesignation("Frontend Developer");
+    setCompany("365 Customizer");
+    // onReset();
+  }
+
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
       {/* Background Color Picker */}
@@ -161,6 +169,7 @@ const ProfileCard = ({ user, onReset }) => {
       </div>
 
       {/* Action Buttons */}
+      <div style={{ marginTop: "20px" }}>
       <button
         onClick={downloadCard}
         style={{
@@ -176,7 +185,7 @@ const ProfileCard = ({ user, onReset }) => {
         Download Card
       </button>
       <button
-        onClick={onReset}
+        onClick={handleReset}
         style={{
           padding: "8px 15px",
           border: "none",
@@ -188,6 +197,24 @@ const ProfileCard = ({ user, onReset }) => {
       >
         Reset
       </button>
+      <button
+        onClick={onReset}
+        style={{
+          padding: "8px 15px",
+          marginLeft: "15px",
+          border: "none",
+          borderRadius: "5px",
+          backgroundColor: "#6c757d",
+          color: "#fff",
+          cursor: "pointer",
+        }}
+      >
+        Home
+      </button>
+
+
+      </div>
+     
     </div>
   );
 };
