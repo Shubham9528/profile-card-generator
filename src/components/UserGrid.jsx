@@ -17,11 +17,13 @@ const UserGrid = ({ users, onSelect }) => {
 
      
           <h4>{`${user.name.first} ${user.name.last}`}</h4>
-
+          
         
 
        
           <p>{user.email}</p>
+          <p>Loaction: <b>{user.location.country}</b>
+          </p>
         </div>
       ))}
     </div>
