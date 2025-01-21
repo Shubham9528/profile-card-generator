@@ -4,8 +4,8 @@ import html2canvas from "html2canvas";
 const ProfileCard = ({ user, onReset }) => {
   
   const [name, setName] = useState(`${user.name.first} ${user.name.last}`);
-  const [designation, setDesignation] = useState("Software Engineer");
-  const [company, setCompany] = useState("Tech Corp");
+  const [designation, setDesignation] = useState("Frontend Developer");
+  const [company, setCompany] = useState("365 customizer");
 
 
   const downloadCard = () => {

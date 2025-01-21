@@ -7,7 +7,7 @@ const useFetchUsers = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("https://randomuser.me/api/?results=10");
+        const response = await fetch("https://randomuser.me/api/?results=15");
         const data = await response.json();
         setUsers(data.results);
       } catch (error) {
