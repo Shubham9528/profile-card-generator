@@ -17,10 +17,10 @@ const App = () => {
     <div className="App">
       {/* Header Section */}
       <header style={{ textAlign: "center", marginBottom: "20px" }}>
-        <p style={{ fontSize: "60px", fontWeight: "bold", color: "#333" }}>
+        <p style={{ fontSize: "60px", fontWeight: "bold", color: "#333", marginBottom: "10px" }}>
           360 Customizer Card Generator
         </p>
-        <p style={{ fontSize: "16px", color: "#555" }}>
+        <p style={{ fontSize: "20px", color: "#555" }}>
           Select a profile, customize it, and download your card!
         </p>
       </header>
