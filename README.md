@@ -19,7 +19,6 @@ Welcome to the **360 Customizer Card Generator**, a React application that allow
 
 - **React**: Frontend framework for building the UI.
 - **HTML2Canvas**: Library to capture the DOM as an image.
-- **React Hook Form**: For form state management and validation.
 - **CSS**: For styling the components.
 
 ---
